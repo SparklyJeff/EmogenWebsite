@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/EmogenWebsite/static/css/main.1c21e63b.css",
+    "main.js": "/EmogenWebsite/static/js/main.8514478f.js",
+    "static/js/787.2a3cf023.chunk.js": "/EmogenWebsite/static/js/787.2a3cf023.chunk.js",
+    "index.html": "/EmogenWebsite/index.html",
+    "main.1c21e63b.css.map": "/EmogenWebsite/static/css/main.1c21e63b.css.map",
+    "main.8514478f.js.map": "/EmogenWebsite/static/js/main.8514478f.js.map",
+    "787.2a3cf023.chunk.js.map": "/EmogenWebsite/static/js/787.2a3cf023.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c21e63b.css",
+    "static/js/main.8514478f.js"
+  ]
+}
