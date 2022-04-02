@@ -1,0 +1,26 @@
+.pageHeader{
+    background-color: #97DBAE;
+    background-image: linear-gradient(#97DBAE, #C3E5AE);
+    padding: 1.75%;
+    text-align: center;
+}
+
+.titleImage{
+    height: 3%;
+    width: 3%;
+    position: relative;
+    bottom: 0;
+}
+
+#header{
+    width: 100%;
+    height: 7%;
+}
+
+.pageTitle{
+    padding: 0;
+    margin: 0;
+    font-size: 2.5vw;
+    font-family: "Ubunto", sans-serif;
+}
+

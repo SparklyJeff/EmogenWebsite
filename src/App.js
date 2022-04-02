@@ -1,24 +1,50 @@
-import logo from './logo.svg';
+import react, {useEffect, useState} from 'react'
+import ReactDOM from 'react-dom';
+import { useHistory } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Prediction from './components/Prediction.jsx'
+import Heading from './components/Heading.jsx'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+  const [userText, setUserText] = useState("sheep");
+
+  // function handleUserText(event){
+  //   setUserText(event.target.value)
+  // }
+
+  
+  function handleSubmit(event){
+    console.log("prediction text:")
+    console.log(userText)
+    event.preventDefault()
+    ReactDOM.render(
+      <div> 
+      <Prediction userInput={userText}></Prediction>
+      </div>, document.getElementById("predictionBox")
+    );
+  }
+
+  return(
+    <div className="body">
+      <Heading></Heading>
+      <div id="container"> 
+        <p className="userPrompt">
+          Prediction Bot:
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <form onSubmit={event => (handleSubmit(event))}>
+            <label className="userPrompt">
+              Enter Your Text: 
+              <br/>
+              <br/>
+              <input className="inputBox" type="text" value={userText} onChange={(event) => setUserText(event.target.value)} placeholder="Type Something!"/>
+            </label>
+            <input type="submit" value="Submit"/>
+          </form>
+          <div id="predictionBox">
+          </div>
+        </div>
+      </div>
   );
 }
 
