@@ -7,7 +7,7 @@ import Heading from './components/Heading.jsx'
 import './App.css';
 
 function App() {
-  const [userText, setUserText] = useState("sheep");
+  const [userText, setUserText] = useState("hello!");
 
   // function handleUserText(event){
   //   setUserText(event.target.value)
@@ -29,9 +29,6 @@ function App() {
     <div className="body">
       <Heading></Heading>
       <div id="container"> 
-        <p className="userPrompt">
-          Prediction Bot:
-        </p>
           <form onSubmit={event => (handleSubmit(event))}>
             <label className="userPrompt">
               Enter Your Text: 

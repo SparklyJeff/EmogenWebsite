@@ -12,5 +12,7 @@
 
 .inputBox{
   color: black;
+  height: 40%;
+  width: 30%;
   font-family: 'Courier New', Courier, monospace;
 }
