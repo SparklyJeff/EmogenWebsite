@@ -1,0 +1,12 @@
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.pageFooter{
+    background-color: #97DBAE;
+    background-image: linear-gradient(#97DBAE, #C3E5AE);
+    text-align: center;
+}

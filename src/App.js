@@ -5,9 +5,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Prediction from './components/Prediction.jsx'
 import Heading from './components/Heading.jsx'
 import './App.css';
+import Footer from './components/Footer.jsx';
 
 function App() {
-  const [userText, setUserText] = useState("hello!");
+  const [userText, setUserText] = useState("");
 
   // function handleUserText(event){
   //   setUserText(event.target.value)
@@ -27,7 +28,7 @@ function App() {
 
   return(
     <div className="body">
-      <Heading></Heading>
+      <Heading/>
       <div id="container"> 
           <form onSubmit={event => (handleSubmit(event))}>
             <label className="userPrompt">
@@ -41,6 +42,7 @@ function App() {
           <div id="predictionBox">
           </div>
         </div>
+        <Footer/>
       </div>
   );
 }

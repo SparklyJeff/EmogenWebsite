@@ -1,0 +1,17 @@
+import react, {useEffect, useState} from 'react'
+import ReactDOM from 'react-dom';
+import Emoji from './Emoji';
+import './Footer.css'
+
+function Footer(props){
+    return(
+        <div className = "pageFooter" id="footer">
+            <p>
+                Created by Jeffrey Cao, Jordan Tran, and Spencer Zeng
+                <Emoji symbol="😎">
+                </Emoji>
+            </p>
+        </div>
+    );
+}
+export default Footer;

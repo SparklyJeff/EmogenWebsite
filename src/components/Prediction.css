@@ -1,4 +1,19 @@
+.confidenceBar{
+    float: left;
+    width: 25%;
+    height: 60%;
+    border-width: 1px;
+    border-color: #97DBAE;
+}
+
 .topEmoji{
-    font-size: 7vw;
+    float: left;
+    font-size: 14vw;
     height: 40%;
+    width: 50%;
+}
+
+.historyBar{
+    float:left;
+    width: 25%;
 }
