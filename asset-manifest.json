@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/EmogenWebsite/static/css/main.9e939f6c.css",
-    "main.js": "/EmogenWebsite/static/js/main.f127482a.js",
-    "static/js/787.2a3cf023.chunk.js": "/EmogenWebsite/static/js/787.2a3cf023.chunk.js",
-    "static/media/Tongue.png": "/EmogenWebsite/static/media/Tongue.36a55589d3809552d451.png",
-    "index.html": "/EmogenWebsite/index.html",
-    "main.9e939f6c.css.map": "/EmogenWebsite/static/css/main.9e939f6c.css.map",
-    "main.f127482a.js.map": "/EmogenWebsite/static/js/main.f127482a.js.map",
-    "787.2a3cf023.chunk.js.map": "/EmogenWebsite/static/js/787.2a3cf023.chunk.js.map"
+    "main.css": "/static/css/main.9e939f6c.css",
+    "main.js": "/static/js/main.90a00dba.js",
+    "static/js/787.2a3cf023.chunk.js": "/static/js/787.2a3cf023.chunk.js",
+    "static/media/Tongue.png": "/static/media/Tongue.36a55589d3809552d451.png",
+    "index.html": "/index.html",
+    "main.9e939f6c.css.map": "/static/css/main.9e939f6c.css.map",
+    "main.90a00dba.js.map": "/static/js/main.90a00dba.js.map",
+    "787.2a3cf023.chunk.js.map": "/static/js/787.2a3cf023.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e939f6c.css",
-    "static/js/main.f127482a.js"
+    "static/js/main.90a00dba.js"
   ]
 }
