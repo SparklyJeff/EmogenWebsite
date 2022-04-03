@@ -61,9 +61,9 @@ function Prediction(props){
             <div>
                 <br/>
                 <div className="confidenceBar"> 
-                    <p>
+                    <h3>
                         Prediction Weights:
-                    </p>
+                    </h3>
                     <p>
                         <Emoji symbol={emojiList[0].label}></Emoji> : {(emojiList[0].score * 100).toFixed(2)}
                     </p>
@@ -79,9 +79,9 @@ function Prediction(props){
                     </Emoji>
                 </div>
                 <div className="historyBar">
-                    <p>
+                    <h3>
                         History:
-                    </p>
+                    </h3>
                     <History input={props.userInput} emojiprediction={emojiList[0].label}/>
                 </div>
             </div>, document.getElementById("emojiSpot")

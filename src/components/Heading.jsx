@@ -8,7 +8,7 @@ function Heading(props){
     return(
         <div className = "pageHeader" id="header">
             <h1 className = "pageTitle">
-                Welcome to Emogen!
+                Emogen
                 <Emoji symbol="😛">
                 </Emoji>
             </h1>

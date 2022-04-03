@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@700&family=Ubuntu:wght@400;700&display=swap');
 .pageHeader{
     background-color: #97DBAE;
     background-image: linear-gradient(#97DBAE, #C3E5AE);
@@ -20,7 +21,7 @@
 .pageTitle{
     padding: 0;
     margin: 0;
-    font-size: 2.5vw;
-    font-family: "Ubunto", sans-serif;
+    font-size: 3vw;
+    font-family: "Open Sans", "Ubuntu", sans-serif;
 }
 

@@ -16,14 +16,13 @@ function App() {
 
   
   function handleSubmit(event){
-    console.log("prediction text:")
-    console.log(userText)
     event.preventDefault()
     ReactDOM.render(
       <div> 
       <Prediction userInput={userText}></Prediction>
       </div>, document.getElementById("predictionBox")
     );
+    setUserText("")
   }
 
   return(

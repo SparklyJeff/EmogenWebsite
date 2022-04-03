@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@400;700&display=swap');
+
 .confidenceBar{
     float: left;
     width: 25%;
     height: 60%;
     border-width: 1px;
     border-color: #97DBAE;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .topEmoji{
@@ -11,9 +14,15 @@
     font-size: 14vw;
     height: 40%;
     width: 50%;
+    font-family: "Ubuntu", sans-serif;
 }
 
 .historyBar{
     float:left;
     width: 25%;
+    font-family: "Ubuntu", sans-serif;
+}
+
+h3{
+    text-decoration: underline;
 }
