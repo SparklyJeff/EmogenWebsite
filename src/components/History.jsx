@@ -4,16 +4,16 @@ import Emoji from './Emoji';
 import './History.css'
 
 function History(props){
-    if (localStorage.getItem(6)){
+    if (sessionStorage.getItem(6)){
         for (var i = 0; i < 6; i++){
-            localStorage.setItem(i, localStorage.getItem(i + 1))
+            sessionStorage.setItem(i, sessionStorage.getItem(i + 1))
         }
-        localStorage.setItem(6, props.input + props.emojiprediction)
+        sessionStorage.setItem(6, props.input + props.emojiprediction)
     }
     else{
         for (var i = 0; i < 7; i++){
-            if (!localStorage.getItem(i)){
-                localStorage.setItem(
+            if (!sessionStorage.getItem(i)){
+                sessionStorage.setItem(
                     i, 
                     props.input + props.emojiprediction
                 )
@@ -24,25 +24,25 @@ function History(props){
     return(
         <div>
             <p>
-                {localStorage.getItem(0)}
+                {sessionStorage.getItem(0)}
             </p>
             <p>
-                {localStorage.getItem(1)}
+                {sessionStorage.getItem(1)}
             </p>
             <p>
-                {localStorage.getItem(2)}
+                {sessionStorage.getItem(2)}
             </p>
             <p>
-                {localStorage.getItem(3)}
+                {sessionStorage.getItem(3)}
             </p>
             <p>
-                {localStorage.getItem(4)}
+                {sessionStorage.getItem(4)}
             </p>
             <p>
-                {localStorage.getItem(5)}
+                {sessionStorage.getItem(5)}
             </p>
             <p>
-                {localStorage.getItem(6)}
+                {sessionStorage.getItem(6)}
             </p>
         </div>
     );

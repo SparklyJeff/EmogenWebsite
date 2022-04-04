@@ -1,7 +1,6 @@
 {
   "name": "emoticon",
   "version": "0.1.0",
-  "homepage": "https://sparklyjeff.github.io/EmogenWebsite",
   "private": true,
   "dependencies": {
     "@fontsource/ubuntu": "^4.5.6",
