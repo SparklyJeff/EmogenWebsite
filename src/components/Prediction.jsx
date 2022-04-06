@@ -21,6 +21,15 @@ function Prediction(props){
         }
     ]
 
+    function importAll(r) {
+        let images = {};
+        r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+        return images;
+      }
+      
+    const images = importAll(require.context('./clouds', false, /\.(png|jpe?g|svg)$/));
+    
+
     var maxThreshold = 0
 
     function arrayInsert(newEmoji, newWeight){
@@ -77,9 +86,10 @@ function Prediction(props){
                 <div className="topEmoji">
                     <Emoji symbol={emojiList[0].label}>
                     </Emoji>
+                    <img className="wordCloud" src={images[emojiList[0].label + ".jpg"]} alt="wordCloud"/>
                 </div>
                 <div className="historyBar">
-                    <h3>
+                    <h3 className="historyTitle">
                         History:
                     </h3>
                     <History input={props.userInput} emojiprediction={emojiList[0].label}/>

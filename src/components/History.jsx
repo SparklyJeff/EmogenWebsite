@@ -4,14 +4,14 @@ import Emoji from './Emoji';
 import './History.css'
 
 function History(props){
-    if (sessionStorage.getItem(6)){
-        for (var i = 0; i < 6; i++){
+    if (sessionStorage.getItem(4)){
+        for (var i = 0; i < 4; i++){
             sessionStorage.setItem(i, sessionStorage.getItem(i + 1))
         }
-        sessionStorage.setItem(6, props.input + props.emojiprediction)
+        sessionStorage.setItem(4, props.input + props.emojiprediction)
     }
     else{
-        for (var i = 0; i < 7; i++){
+        for (var i = 0; i < 5; i++){
             if (!sessionStorage.getItem(i)){
                 sessionStorage.setItem(
                     i, 
@@ -23,26 +23,20 @@ function History(props){
     }
     return(
         <div>
-            <p>
+            <p className="historyText">
                 {sessionStorage.getItem(0)}
             </p>
-            <p>
+            <p className="historyText">
                 {sessionStorage.getItem(1)}
             </p>
-            <p>
+            <p className="historyText">
                 {sessionStorage.getItem(2)}
             </p>
-            <p>
+            <p className="historyText">
                 {sessionStorage.getItem(3)}
             </p>
-            <p>
+            <p className="historyText">
                 {sessionStorage.getItem(4)}
-            </p>
-            <p>
-                {sessionStorage.getItem(5)}
-            </p>
-            <p>
-                {sessionStorage.getItem(6)}
             </p>
         </div>
     );
