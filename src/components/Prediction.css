@@ -3,10 +3,8 @@
 .confidenceBar{
     float: left;
     height: 60%;
-    border-width: 1px;
-    border-color: #97DBAE;
     font-family: "Ubuntu", sans-serif;
-    font-size: 2rem;
+    border-bottom: 15%;
 }
 
 .topEmoji{
@@ -23,7 +21,6 @@
 .historyBar{
     float:left;
     font-family: "Ubuntu", sans-serif;
-    font-size: 2rem;
     padding: 0;
     margin-bottom: 15%;
 }
@@ -37,7 +34,7 @@ h3{
     bottom: 10%;
     left: 0;
     width: 100%;
-    height: 85%;
+    height: 90%;
     opacity: 10%;
     z-index: -5;
 }

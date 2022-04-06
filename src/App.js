@@ -22,6 +22,12 @@ function App() {
     );
     setUserText("")
   }
+  var textHeight = "1rem"
+  var widthSize = "30%"
+  if(window.innerWidth < 600){
+    textHeight = "2rem"
+    widthSize = "70%"
+  }
 
   return(
     <div className="body">
@@ -32,7 +38,7 @@ function App() {
               Enter Your Text: 
               <br/>
               <br/>
-              <input className="inputBox" type="text" value={userText} onChange={(event) => setUserText(event.target.value)} placeholder="Type Something!"/>
+              <input className="inputBox" type="text" value={userText} onChange={(event) => setUserText(event.target.value)} placeholder="Type Something!" style={{fontSize : textHeight, width: widthSize}}/>
             </label>
             <input type="submit" value="Submit"/>
           </form>

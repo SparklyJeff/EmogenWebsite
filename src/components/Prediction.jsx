@@ -23,9 +23,15 @@ function Prediction(props){
 
     var sideBarWidth = "25%"
     var topEmojiWidth = "50%"
+    var confidenceSlot = "1"
+    var topEmojiSlot = "2"
+    var newSize = "2rem"
     if (window.innerWidth < 600){
-        sideBarWidth = "100%"
+        sideBarWidth = "50%"
         topEmojiWidth = "100%"
+        topEmojiSlot = "1"
+        confidenceSlot = "2"
+        newSize = "1.5rem"
     }
 
 
@@ -73,11 +79,9 @@ function Prediction(props){
                 arrayInsert(response[0][i].label, response[0][i].score)
             }
         }
-
+        console.log("new render")
         ReactDOM.render(
-            <div>
-                <br/>
-                <div className="confidenceBar" style={{width : sideBarWidth}}> 
+                <div className="confidenceBar" style={{width : sideBarWidth, fontSize : newSize}}> 
                     <h3>
                         Prediction Weights:
                     </h3>
@@ -90,27 +94,39 @@ function Prediction(props){
                     <p>
                         <Emoji symbol={emojiList[2].label}></Emoji> : {(emojiList[2].score * 100).toFixed(2)}
                     </p>
-                </div>
+                </div>, document.getElementById("slot" + confidenceSlot)
+        );
+        ReactDOM.render(
                 <div className="topEmoji" style={{width : topEmojiWidth}}>
                     <Emoji symbol={emojiList[0].label}>
                     </Emoji>
                     <img className="wordCloud" src={images[emojiList[0].label + ".jpg"]} alt="wordCloud"/>
-                </div>
-                <div className="historyBar" style={{width : sideBarWidth}}>
+                </div>, document.getElementById("slot" + topEmojiSlot)
+        );
+        ReactDOM.render(
+                <div className="historyBar" style={{width : sideBarWidth, fontSize : newSize}}>
                     <h3 className="historyTitle">
                         History:
                     </h3>
                     <History input={props.userInput} emojiprediction={emojiList[0].label}/>
-                </div>
-            </div>, document.getElementById("emojiSpot")
+                </div>, document.getElementById("slot3")
         );
     });
     maxThreshold = 0
 
 
     return(
-        <div id="emojiSpot">
+        <div>
+            <br/>
+            <div id="slot1">
 
+            </div>
+            <div id="slot2">
+
+            </div>
+            <div id="slot3">
+
+            </div>
         </div>
     );
 }
