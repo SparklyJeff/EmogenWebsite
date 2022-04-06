@@ -1,6 +1,3 @@
-import react, {useEffect, useState} from 'react'
-import ReactDOM from 'react-dom';
-import Emoji from './Emoji';
 import './History.css'
 
 function History(props){
@@ -11,10 +8,10 @@ function History(props){
         sessionStorage.setItem(4, props.input + props.emojiprediction)
     }
     else{
-        for (var i = 0; i < 5; i++){
-            if (!sessionStorage.getItem(i)){
+        for (var j = 0; j < 5; j++){
+            if (!sessionStorage.getItem(j)){
                 sessionStorage.setItem(
-                    i, 
+                    j, 
                     props.input + props.emojiprediction
                 )
                 break

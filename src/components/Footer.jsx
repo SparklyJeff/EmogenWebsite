@@ -1,5 +1,3 @@
-import react, {useEffect, useState} from 'react'
-import ReactDOM from 'react-dom';
 import Emoji from './Emoji';
 import './Footer.css'
 

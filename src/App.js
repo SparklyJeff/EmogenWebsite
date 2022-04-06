@@ -1,7 +1,5 @@
-import react, {useEffect, useState} from 'react'
+import {useState} from 'react'
 import ReactDOM from 'react-dom';
-import { useHistory } from 'react-router-dom';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Prediction from './components/Prediction.jsx'
 import Heading from './components/Heading.jsx'
 import './App.css';

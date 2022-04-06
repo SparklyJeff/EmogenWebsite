@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import Emoji from "./Emoji.jsx";
 import "./Prediction.css"
@@ -20,6 +20,14 @@ function Prediction(props){
             "score" : 0.0
         }
     ]
+
+    var sideBarWidth = "25%"
+    var topEmojiWidth = "50%"
+    if (window.innerWidth < 600){
+        sideBarWidth = "100%"
+        topEmojiWidth = "100%"
+    }
+
 
     function importAll(r) {
         let images = {};
@@ -69,7 +77,7 @@ function Prediction(props){
         ReactDOM.render(
             <div>
                 <br/>
-                <div className="confidenceBar"> 
+                <div className="confidenceBar" style={{width : sideBarWidth}}> 
                     <h3>
                         Prediction Weights:
                     </h3>
@@ -83,12 +91,12 @@ function Prediction(props){
                         <Emoji symbol={emojiList[2].label}></Emoji> : {(emojiList[2].score * 100).toFixed(2)}
                     </p>
                 </div>
-                <div className="topEmoji">
+                <div className="topEmoji" style={{width : topEmojiWidth}}>
                     <Emoji symbol={emojiList[0].label}>
                     </Emoji>
                     <img className="wordCloud" src={images[emojiList[0].label + ".jpg"]} alt="wordCloud"/>
                 </div>
-                <div className="historyBar">
+                <div className="historyBar" style={{width : sideBarWidth}}>
                     <h3 className="historyTitle">
                         History:
                     </h3>
@@ -98,6 +106,7 @@ function Prediction(props){
         );
     });
     maxThreshold = 0
+
 
     return(
         <div id="emojiSpot">

@@ -2,20 +2,19 @@
 
 .confidenceBar{
     float: left;
-    width: 25%;
     height: 60%;
     border-width: 1px;
     border-color: #97DBAE;
     font-family: "Ubuntu", sans-serif;
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .topEmoji{
     float: left;
-    font-size: 14vw;
+    font-size: 14rem;
     height: 40%;
-    width: 50%;
     font-family: "Ubuntu", sans-serif;
+    margin-bottom: 0;
 }
 
 .historyTitle{
@@ -23,10 +22,10 @@
 }
 .historyBar{
     float:left;
-    width: 25%;
     font-family: "Ubuntu", sans-serif;
-    font-size: 2vw;
+    font-size: 2rem;
     padding: 0;
+    margin-bottom: 15%;
 }
 
 h3{

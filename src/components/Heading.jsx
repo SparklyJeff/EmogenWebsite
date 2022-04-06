@@ -1,8 +1,5 @@
-import react, {useEffect, useState} from 'react'
-import ReactDOM from 'react-dom';
 import Emoji from './Emoji';
 import './Heading.css'
-import Tongue from "./images/Tongue.png"
 
 function Heading(props){
     return(
