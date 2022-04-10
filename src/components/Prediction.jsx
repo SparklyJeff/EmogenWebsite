@@ -100,7 +100,7 @@ function Prediction(props){
                 <div className="topEmoji" style={{width : topEmojiWidth}}>
                     <Emoji symbol={emojiList[0].label}>
                     </Emoji>
-                    <img className="wordCloud" src={images[emojiList[0].label + ".jpg"]} alt="wordCloud"/>
+                    <img className="wordCloud" src={images[emojiList[0].label + ".png"]} alt="wordCloud"/>
                 </div>, document.getElementById("slot" + topEmojiSlot)
         );
         ReactDOM.render(

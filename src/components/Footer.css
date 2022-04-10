@@ -6,7 +6,7 @@
     right: 0;
     left: 0;
     width: 100%;
-    height: 10%;
+    height: 5%;
 }
 
 .pageFooter{
@@ -14,4 +14,6 @@
     background-image: linear-gradient(#97DBAE, #C3E5AE);
     text-align: center;
     font-family: "Ubuntu", sans-serif;
+    padding: 1%;
 }
+
