@@ -21,19 +21,19 @@ function History(props){
     return(
         <div>
             <p className="historyText">
-                {sessionStorage.getItem(0)}
-            </p>
-            <p className="historyText">
-                {sessionStorage.getItem(1)}
-            </p>
-            <p className="historyText">
-                {sessionStorage.getItem(2)}
+                {sessionStorage.getItem(4)}
             </p>
             <p className="historyText">
                 {sessionStorage.getItem(3)}
             </p>
             <p className="historyText">
-                {sessionStorage.getItem(4)}
+                {sessionStorage.getItem(2)}
+            </p>
+            <p className="historyText">
+                {sessionStorage.getItem(1)}
+            </p>
+            <p className="historyText">
+                {sessionStorage.getItem(0)}
             </p>
         </div>
     );
