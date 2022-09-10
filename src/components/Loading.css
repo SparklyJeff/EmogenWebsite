@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@400;700&display=swap');
+
+.loadingHeader{
+    text-align: center;
+    margin: auto;
+}
+
+
+.spinLogo{
+    text-align: center;
+}
+
+.loadingText{
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
+    font-family: "Open Sans", "Ubuntu", sans-serif;
+}

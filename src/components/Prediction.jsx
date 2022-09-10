@@ -79,7 +79,6 @@ function Prediction(props){
                 arrayInsert(response[0][i].label, response[0][i].score)
             }
         }
-        console.log("new render")
         ReactDOM.render(
                 <div className="confidenceBar" style={{width : sideBarWidth, fontSize : newSize}}> 
                     <h3>
