@@ -3,16 +3,17 @@ import './Heading.css'
 
 function Heading(props){
     return(
-        <div className = "pageHeader" id="header">
-            <h1 className = "pageTitle">
-                Emogen
-                <Emoji symbol="😛">
-                </Emoji>
-            </h1>
-            <p>
-                Enter anything and our website will automatically generate a matching emoji! <Emoji symbol='🤔'></Emoji> 
-            </p>
-        </div>
+    <div className="pageHeader" id="header">
+        <a className="logo" href="/">
+        Emogen<Emoji symbol="😛"></Emoji>
+        </a>
+        <a className="nav-link" href="/contact">
+            Contact 
+        </a>
+        <a className="nav-link" href="/">
+            Home
+        </a>
+    </div>
     );
 }
 export default Heading;

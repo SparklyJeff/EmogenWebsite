@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+.pageHeader{
+    background-color: #97DBAE;
+    background-image: linear-gradient(#97DBAE, #C3E5AE);
+    padding: 0.8%;
+    position: fixed;
+    width: 100%;
+}
+
+.logo{
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-weight: bold;
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a{
+    color:black;
+}
+
+.nav-link:hover { text-decoration: underline; }
+.nav-link:active { text-decoration: underline; }
+.nav-link{
+    float: right;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+}
+
