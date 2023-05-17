@@ -7,7 +7,7 @@ function Heading(props){
         <a className="logo" href="/">
         Emogen<Emoji symbol="😛"></Emoji>
         </a>
-        <a className="nav-link" href="/contact">
+        <a className="nav-link" href="#/contact">
             Contact 
         </a>
         <a className="nav-link" href="/">
