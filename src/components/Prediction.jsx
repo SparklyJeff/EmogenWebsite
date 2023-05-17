@@ -63,7 +63,7 @@ function Prediction(props){
         const response = await fetch(
             "https://api-inference.huggingface.co/models/junren/Emogen",
             {
-                headers: { Authorization: "Bearer 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" },
+                headers: { Authorization: "Bearer " + String(process.env.REACT_APP_HUGGING_FACE_TOKEN)},
                 method: "POST",
                 body: JSON.stringify(data),
             }

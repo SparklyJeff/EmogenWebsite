@@ -8,7 +8,8 @@ import Loading from '../components/Loading.jsx';
 
 const Home = () => {
   const [userText, setUserText] = useState("");
-  const [loaded, setLoaded] = useState(false)
+  const [loaded, setLoaded] = useState(false);
+  const [predicted, setPrediction] = useState(true);
 
   // function handleUserText(event){
   //   setUserText(event.target.value)
@@ -27,9 +28,6 @@ const Home = () => {
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
   async function query(data){
-    console.log("inside query")
-    console.log(loaded)
-    console.log(data)
     const response = await fetch(
       "https://api-inference.huggingface.co/models/junren/Emogen",
       {
@@ -37,7 +35,6 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
           method: "POST",
           body: JSON.stringify(data),
       })
-      console.log(response)
       const result = await response.json();
       return result
   };
@@ -46,9 +43,8 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
     try{
     const result = await query(data)
     console.log(result)
-    while (result.error === 'Model junren/Emogen is currently loading'){
+    if (result.error === 'Model junren/Emogen is currently loading'){
         await delay(result.estimated_time * 1000)
-        const result = await query(data)
     }
     setLoaded(true)
     }
@@ -58,19 +54,18 @@ const delay = ms => new Promise(res => setTimeout(res, ms));
 };
 
 useEffect(() => {
-    if (!loaded){
-        loadingFunc({'inputs' : makeid(6)})
-    }
-});
-
+    loadingFunc({'inputs' : makeid(6)})
+}, []);
   
-  function handleSubmit(event){
+function handleSubmit(event){
     event.preventDefault()
+    setPrediction({...false})
     ReactDOM.render(
       <div> 
       <Prediction userInput={userText}></Prediction>
       </div>, document.getElementById("predictionBox")
     );
+    setPrediction({...true})
     setUserText("")
   }
   var textHeight = "1rem"
@@ -93,7 +88,15 @@ useEffect(() => {
               <br/>
               <input className="inputBox" type="text" value={userText} onChange={(event) => setUserText(event.target.value)} placeholder="Type Something!" style={{fontSize : textHeight, width: widthSize}}/>
             </label>
-            <input type="submit" value="Submit"/>
+            {
+                predicted ? 
+                (<input type="submit" value="Submit" id="submitButton"/>) :
+                (
+                    <p>
+                        generating prediction....
+                    </p>
+                )
+            }
           </form>
           <div id="predictionBox">
           </div>

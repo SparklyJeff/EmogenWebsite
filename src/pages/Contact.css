@@ -1,6 +1,11 @@
 #Container{
-    height: 100%;
-    flex-direction: column;
-    padding: 10%;
+    padding: 5%;
     text-align: center;
+  }
+
+  .Person{
+    padding: 5%;
+    float: left;
+    width: 23.3333%;
+    height: 140%;
   }
