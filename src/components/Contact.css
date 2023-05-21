@@ -1,5 +1,9 @@
-#Container{
+#CContainer{
     padding: 5%;
+    text-align: center;
+  }
+
+  .Contact{
     text-align: center;
   }
 

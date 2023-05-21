@@ -2,13 +2,11 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from '../pages/Home.js';
-import Contact from '../pages/Contact.js';
 
 const Main = () => {
   return (
-    <Routes> 
+    <Routes basename={process.env.PUBLIC_URL}> 
       <Route exact path='/' element={<Home/>}></Route>
-      <Route exact path='/contact' element={<Contact/>}></Route>
     </Routes>
   );
 }

@@ -1,18 +1,19 @@
 import Emoji from './Emoji';
+import { HashLink } from 'react-router-hash-link';
 import './Heading.css'
 
 function Heading(props){
     return(
     <div className="pageHeader" id="header">
-        <a className="logo" href="/">
+        <HashLink className="logo" smooth to="/#top">
         Emogen<Emoji symbol="😛"></Emoji>
-        </a>
-        <a className="nav-link" href="#/contact">
+        </HashLink>
+        <HashLink className="nav-link" smooth to="/#Contact">
             Contact 
-        </a>
-        <a className="nav-link" href="/">
+        </HashLink>
+        <HashLink className="nav-link" smooth to="/#top">
             Home
-        </a>
+        </HashLink>
     </div>
     );
 }

@@ -3,9 +3,9 @@ import "./Contact.css"
 
 const Contact = () => {
   return (
-    <div id="Container">
-        <h2>
-            Contact Page
+    <div id="CContainer">
+        <h2 className = "Contact" id="Contact">
+            Contact Us
         </h2>
         <div className="Profiles">
             <div className="Person">

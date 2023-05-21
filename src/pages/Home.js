@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import Prediction from '../components/Prediction.jsx'
 import Heading from '../components/Heading.jsx'
+import Contact from '../components/Contact.jsx';
 import './Home.css';
 import Loading from '../components/Loading.jsx';
 
@@ -105,6 +106,7 @@ function handleSubmit(event){
           <Loading/>
         )
         }
+        <Contact/>
       </div>
   );
 }
