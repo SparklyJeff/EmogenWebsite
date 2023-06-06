@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@400;700&display=swap');
 #container{
-  height: 100vh;
+  height: 75vh;
+  overflow: auto;
   flex-direction: column;
   padding: 10%;
   text-align: center;
@@ -16,4 +17,24 @@
   color: black;
   height: 40%;
   font-family: "Ubuntu", sans-serif;
+}
+
+.form-submit-button {
+  height: 3em;
+  width: 6em;
+	background: #eaea1a;
+	color: #030303;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+
+.form-submit-button:hover {
+	background: #016ABC;
+	color: #fff;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
 }

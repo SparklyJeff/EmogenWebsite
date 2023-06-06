@@ -1,4 +1,3 @@
-import {useState} from 'react'
 import Heading from './components/Heading.jsx'
 import Main from './components/Main.js'
 import './App.css';

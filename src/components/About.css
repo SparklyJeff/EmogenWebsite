@@ -1,22 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu:wght@400;700&display=swap');
 
-.loadingHeader{
+.aboutHeader{
     text-align: center;
-    height: 100vh;
-    padding: 5%;
+    height: max-content;
+    padding: 2%;
+    background-color: rgba(220, 230, 177, 0.05);
+    overflow: auto;
 }
 
 h3{
     text-decoration: none;
-}
-
-.spinLogo{
     text-align: center;
 }
 
-.loadingText{
+
+.about{
     padding: 0;
     margin: 0;
     font-size: 3rem;
     font-family: "Open Sans", "Ubuntu", sans-serif;
+}
+
+.segment{
+    float: left;
+}
+
+.example{
+    width: 100%;
 }

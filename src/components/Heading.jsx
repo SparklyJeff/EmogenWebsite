@@ -11,6 +11,9 @@ function Heading(props){
         <HashLink className="nav-link" smooth to="/#Contact">
             Contact 
         </HashLink>
+        <HashLink className="nav-link" smooth to="/#About">
+            About 
+        </HashLink>
         <HashLink className="nav-link" smooth to="/#top">
             Home
         </HashLink>

@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Prediction from '../components/Prediction.jsx'
 import Heading from '../components/Heading.jsx'
 import Contact from '../components/Contact.jsx';
+import About from '../components/About.jsx';
 import './Home.css';
 import Loading from '../components/Loading.jsx';
 
@@ -12,9 +13,6 @@ const Home = () => {
   const [loaded, setLoaded] = useState(false);
   const [predicted, setPrediction] = useState(true);
 
-  // function handleUserText(event){
-  //   setUserText(event.target.value)
-  // }
   function makeid(length) {
     var result           = '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -83,15 +81,15 @@ function handleSubmit(event){
       { loaded ?
       (<div id="container"> 
           <form onSubmit={event => (handleSubmit(event))}>
-            <label className="userPrompt">
+            <h1 className="userPrompt">
               Enter Your Text: 
               <br/>
               <br/>
               <input className="inputBox" type="text" value={userText} onChange={(event) => setUserText(event.target.value)} placeholder="Type Something!" style={{fontSize : textHeight, width: widthSize}}/>
-            </label>
+            </h1>
             {
                 predicted ? 
-                (<input type="submit" value="Submit" id="submitButton"/>) :
+                (<input type="submit" value="Submit" className = "form-submit-button" id="submitButton"/>) :
                 (
                     <p>
                         generating prediction....
@@ -106,6 +104,7 @@ function handleSubmit(event){
           <Loading/>
         )
         }
+        <About/>
         <Contact/>
       </div>
   );

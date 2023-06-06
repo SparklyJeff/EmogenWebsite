@@ -10,12 +10,12 @@ function Loading(props){
             <Emoji symbol='😴'></Emoji> 
             </h1>
             <img id = 'spinLogo' src = {spinner} alt = "..."/>
-            <p>
+            <h3>
                 Welcome to Emogen! <Emoji symbol='😊'></Emoji> 
-            </p>
-            <p>
-                Enter anything and our website will automatically generate a matching emoji! <Emoji symbol='🤔'></Emoji> 
-            </p>
+            </h3>
+            <h3>
+                Enter anything and Emogen will generate a matching emoji! <Emoji symbol='🤔'></Emoji> 
+            </h3>
         </div>
     ); 
 };

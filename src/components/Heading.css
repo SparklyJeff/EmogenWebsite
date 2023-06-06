@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 .pageHeader{
-    background-color: #97DBAE;
-    background-image: linear-gradient(#97DBAE, #C3E5AE);
+    background-color: #e0e966;
+    background-image: linear-gradient(#e7f944, #f1e686);
     padding: 0.8%;
     position: fixed;
     width: 100%;
@@ -12,17 +12,14 @@
     margin-left: 2%;
     margin-right: 2%;
     font-weight: bold;
-}
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a{
-    color:black;
+    font-size: 1.25rem;
 }
 
 .nav-link:hover { text-decoration: underline; }
 .nav-link:active { text-decoration: underline; }
 .nav-link{
     float: right;
+    margin-top: 0.25%;
     margin-left: 1.5%;
     margin-right: 1.5%;
 }
